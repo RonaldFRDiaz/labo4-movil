@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
         actionNext.setOnClickListener{
         val intent = Intent(this, chearactivity::class.java)
             intent.putExtra("name", nameEditText.text.toString())
-        startActivity(intent)
-        }
-        actionNext.setOnClickListener{
-            val intent = Intent(this, chearactivity::class.java)
             intent.putExtra("correo", correoEditText.text.toString())
-            startActivity(intent)
-        }
+            intent.putExtra("numero", numeroEditText.text.toString())
+        startActivity(intent)
+
+         }
+
+
     }
 }
